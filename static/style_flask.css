@@ -1,0 +1,75 @@
+h1 {
+    font-family: Arial, sans-serif; 
+    font-size: 36px; 
+    color: #b61212;
+    background-color: rgb(48, 44, 44);
+    text-align: center;
+    border-width: 2px; 
+    border-style: inset;
+    border-color: #dc1111;
+    
+}
+
+h2 {
+    font-family: Arial, sans-serif;
+    color: #b61212;
+    background-color: rgb(48, 44, 44);
+    border-width: 2px; 
+    border-style: inset;
+    border-color: #dc1111;
+    text-align: center;
+    
+}
+
+h3 {
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    text-decoration: underline;
+    background-color:  rgb(48, 44, 44);
+
+}
+
+h4 {
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    
+    
+
+}
+
+body {
+    background-image: url('/static/home5.jpg');
+    background-size: cover; 
+    background-position: center bottom; 
+    background-repeat: no-repeat; 
+}
+
+/* <!-- Style container --> */
+
+.container1 {
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    width: 1000px; 
+    height: 350px; 
+    background-color:  rgb(48, 44, 44);
+    border-width: 2px; 
+    border-style: inset;
+    border-color: #dc1111;        
+}
+
+.container2 {
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    width: 1000px; 
+    height: 1150px; 
+    background-color:  rgb(48, 44, 44);
+    border-width: 2px; 
+    border-style: inset;
+    border-color: #dc1111;
+    text-align: center;       
+}
+
+image {
+    float: left; 
+    margin-top: 3px; 
+}

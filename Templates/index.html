@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>Fire Data Homepage</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style_flask.css') }}">
+<h1>NASA's Fire Data Visualizer</h1>
+<h2>Welcome! Here, you can learn about the extensive fire data detected and measured by NASA sattelites (Terra and Aqua). </h2>
+
+
+</head>
+
+<body>
+    <div class = "container1">
+        <h4>The Terra and Aqua sattelites are two thirds of NASA's Earth Obeserving System (EOS). These spacecraft are equipped with Moderate Resolution Imaging Spectroradiometers (MODIS), allowing them to measure a variety of geophysical parameters such as fires and thermal anomalies. </h4>
+        <h4><br>These instruments return a bevy of information regarding fires, such as location, start date/time, brightness, Fire Radiative Power(FRP), and much more.</h4>
+        <h4>Working with these satellites, we are exploring the relationship between geography and fire intensity.
+            
+            These two satellites are equipped with Moderate Resolution Imaging Spectroradiometers (MODIS), allowing them to measure a variety of geophysical phenomena including fires & other thermal anomalies that we’ll be taking a look at today.
+            The instruments onboard supply us with a bevy of information about fires on Earth including location, timing, radiative power, and brightness across multiple spectra.
+            The destructive power of raging fires are well documented and have been the cause of recent catastrophes like the 2018 Greek wildfires that led to the death of over 100 people and the 2019-2020 Australian bushfire that burned over 16 million acres of land.
+            Studying the relationships between fire and location over time, understanding where they take place most frequently, provides us the ability to make a more informed decision about what mitigation efforts may be needed to help minimize risk based on locale.
+            </h4>
+        
+
+    </div>
+    <div class = "container2">
+        <h3>  Availabe Routes:</h3>
+        <h4>  /data - Returns the data used to create these fantastic visuals!</h4>
+        <h4>  /3D - Check out fires that occured across the globe in 2024 so far with this 3D visualization!</h4>
+        <img src="{{ url_for('static', filename='3D Map.jpg' ) }}" alt="3D Visualization" class= "image" width="150" height ="100">
+        <h4>/heatmap A heat map of 2 years worth of fire Data in the US! (2022-2023) </h4>
+        <img src="{{ url_for('static', filename='heatmap.jpg' ) }}" alt="Heatmap" class= "image" width="200" height ="100">
+        <h4>/frp - FRP (Fire Radiative Power) is a measure related to the rate at which carbon-based fuel is being consumed. It is measured in MegaWatts and can be used to approximate the total amount of combusted biomass,therfore highlighting particularly destructive fires. </h4>
+        <img src="{{ url_for('static', filename='FRP Map.jpg' ) }}" alt="FRP Visualization" class= "image" width="200" height ="100">
+        <h4>/US - This map shows 2 years (2022-2023) of fires across the US! Can be filtered based on confidence level.</h4>
+        <img src="{{ url_for('static', filename='2D Map.jpg' ) }}" alt="2D Visualization" class= "image" width="200" height ="100">
+        <h4>/brightest - Checkout the brightest fires of 2022-2023!</h4>
+        <img src="{{ url_for('static', filename='brightest.jpg' ) }}" alt="Brightest Fires" class= "image" width="200" height ="100">
+        <h4>/dropdown - Filter for confidence and year with this Visualization!</h4>
+        <img src="{{ url_for('static', filename='dropdown.jpg' ) }}" alt="dropdown" class= "image" width="200" height ="100">
+
+        
+
+    </div>
+
+    
+
+
+    </div>
+</body>
+
+</html>  
